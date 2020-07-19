@@ -8,8 +8,7 @@ public abstract class ZProtoObject {
 
     public final Map<String, ZProtoObject> members = new HashMap<>();
 
-
-//    public abstract String toNiceString();
+    public abstract String toNiceString();
 
 }
 
