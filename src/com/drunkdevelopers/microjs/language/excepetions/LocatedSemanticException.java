@@ -1,11 +1,14 @@
-package com.drunkdevelopers.microjs.language;
+package com.drunkdevelopers.microjs.language.excepetions;
 
+import com.drunkdevelopers.microjs.language.FileLocation;
 import org.jetbrains.annotations.NotNull;
 
 public class LocatedSemanticException extends Exception {
 
-    private final @NotNull FileLocation fileLocation;
-    private final @NotNull SemanticException semanticException;
+    private final @NotNull
+    FileLocation fileLocation;
+    private final @NotNull
+    SemanticException semanticException;
 
     public LocatedSemanticException(@NotNull FileLocation fileLocation, @NotNull SemanticException semanticException){
         this.fileLocation = fileLocation;
